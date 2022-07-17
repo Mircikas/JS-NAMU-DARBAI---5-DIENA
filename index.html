@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <!-- <script>
+        console.log("Pirma užduotis");
+        const fname = "Miroslavas";
+        const lname = "Petravičius";
+        const bday = 1989;
+        let today = 2022;
+        let age = today - bday;
+
+        console.log("Aš esu " + fname + " " + lname + ". Man yra " + age + " metai(ų).")
+
+    </script> -->
+
+
+
+        <!-- || - JS naudojamasa kaip arba
+        && - JS naudojamas kaip ir  -->
+        <!-- math.rounde - apvalina i mazesne puse 
+        math.ceil - apvaline i didesne puse - pvz: 0.02 = 1  -->
+
+
+
+
+    <!-- <script>
+        console.log("Antra užduotis");
+        let a = Math.round(Math.random() * 4);
+        let b = Math.round(Math.random() * 4);
+        
+        console.log ("Kintamasis - a = " + a + "; Kintamasis - b = " + b);
+        
+        if(a > b && a !== 0 && b !== 0 && a !== b ) {
+            console.log (( a / b ).toFixed(2));
+            }else if (a < b && a !== 0 && b !== 0 && a !== b ){
+                console.log ((b / a).toFixed(2));
+            } else if (a !== 0 && b !== 0 && a == b) {
+                console.log ("Kintamieji vienodos reikšmės.");
+            } else {
+                console.log ("Vieno iš kintamojo reikšmė lygi 0 :)");
+            }
+
+    </script> -->
+    <!-- <script>
+        console.log("Trečia užduotis");
+        let a = Math.round(Math.random() * 25);
+        let b = Math.round(Math.random() * 25); 
+        let c = Math.round(Math.random() * 25);     
+        
+        console.log(a,b,c);
+
+        if ( a <= b && b <= c || c <= b && b <= a){
+            console.log (b);
+        } else if (b <= a && a <= c || c <= a && a <= b ) {
+            console.log (a);
+        } else {
+                console.log(c)
+            }        
+    </script> -->
+    <!-- <script>
+        console.log("Ketvirta užduotis");
+        let a = Math.ceil(Math.random() * 10);
+        let b = Math.ceil(Math.random() * 10); 
+        let c = Math.ceil(Math.random() * 10);
+
+        console.log (a,b,c);
+        
+        if( a + b > c && a + c > b && b + c > a) {
+            console.log ("Esant šiems kraštinių ilgiams, trikampį sudaryti galima");
+        } else {
+            console.log ("Esant šiems kraštinių ilgiams, trikampį sudaryti NEGALIMA");
+        }
+    </script> -->
+    <!-- <script>
+        console.log("Penkta užduotis");
+        let a = Math.round(Math.random() * 2);
+        let b = Math.round(Math.random() * 2); 
+        let c = Math.round(Math.random() * 2); 
+        let d = Math.round(Math.random() * 2);
+      
+        
+        console.log(a,b,c,d); 
+        if ( a == 0 && b == 0 && c == 0 && d == 0){
+                console.log("Kintamųjų su reikšme 0 skaičius - 4");
+        }else if (a == 0 && b == 0 && c == 0 && d != 0 || a == 0 && b == 0 && c != 0 && d == 0 || a == 0 && b != 0 && c == 0 && d == 0 || a != 0 && b == 0 && c == 0 && d == 0) {
+            console.log("Kintamųjų su reikšme 0 skaičius - 3");
+        }else if (a == 0 && b == 0 || c == 0 && d == 0 || a == 0 && c == 0 || a == 0 && d == 0 || b == 0 && c == 0 || b == 0 && d == 0){
+            console.log("Kintamųjų su reikšme 0 skaičius - 2");
+        } else if (a == 0 || b == 0 || c == 0 || d == 0) {
+            console.log("Kintamųjų su reikšme 0 skaičius - 1");
+        } else console.log("Kintamųjų su reikšme 0 skaičius - 0");
+        
+        if ( a == 1 && b == 1 && c == 1 && d == 1){
+                console.log("Kintamųjų su reikšme 1 skaičius - 4");
+        }else if (a == 1 && b == 1 && c == 1 && d != 1 || a == 1 && b == 1 && c != 1 && d == 1 || a == 1 && b != 1 && c == 1 && d == 1 || a != 1 && b == 1 && c == 1 && d == 1) {
+            console.log("Kintamųjų su reikšme 1 skaičius - 3");
+        }else if (a == 1 && b == 1 || c == 1 && d == 1 || a == 1 && c == 1 || a == 1 && d == 1 || b == 1 && c == 1 || b == 1 && d == 1){
+            console.log("Kintamųjų su reikšme 1 skaičius - 2");
+        } else if (a == 1 || b == 1 || c == 1 || d == 1) {
+            console.log("Kintamųjų su reikšme 1 skaičius - 1");
+        } else console.log("Kintamųjų su reikšme 1 skaičius - 0");
+
+        if ( a == 2 && b == 2 && c == 2 && d == 2){
+                console.log("Kintamųjų su reikšme 2 skaičius - 4");
+        }else if (a == 2 && b == 2 && c == 2 && d != 2 || a == 2 && b == 2 && c != 2 && d == 2 || a == 2 && b != 2 && c == 2 && d == 2 || a != 2 && b == 2 && c == 2 && d == 2) {
+            console.log("Kintamųjų su reikšme 2 skaičius - 3");
+        }else if (a == 2 && b == 2 || c == 2 && d == 2 || a == 2 && c == 2 || a == 2 && d == 2 || b == 2 && c == 2 || b == 2 && d == 2){
+            console.log("Kintamųjų su reikšme 2 skaičius - 2");
+        } else if (a == 2 || b == 2 || c == 2 || d == 2) {
+            console.log("Kintamųjų su reikšme 2 skaičius - 1");
+        } else console.log("Kintamųjų su reikšme 2 skaičius - 0");
+
+    </script> -->
+
+    <!-- <script>
+        console.log("Šešta užduotis");
+        let a = Math.round(Math.random() * 20) - 10;
+        let b = Math.round(Math.random() * 20) - 10;
+        let c = Math.round(Math.random() * 20) - 10;
+
+        console.log("Skaičiai " + a,b,c);
+        
+        if (a == 0){
+            console.log("(" + a +")");
+        } else if (a > 0 && a != 0) {
+            console.log("{" + a +"}");
+        } else console.log("[" + a +"]");
+
+        if (b == 0){
+            console.log("(" + b +")");
+        } else if (b > 0 && b != 0) {
+            console.log("{" + b +"}");
+        } else console.log("[" + b +"]");
+        
+        if (c == 0){
+            console.log("(" + c +")");
+        } else if (c > 0 && c != 0) {
+            console.log("{" + c +"}");
+        } else console.log("[" + c +"]");
+
+    </script> -->
+
+    <script>
+        console.log("Septinta užduotis");
+
+        let a = Math.round(Math.random() * 2995) + 5;
+        let b = a * 1; // zvakiu kaina uz vnt.
+        let c = (b * 0.97); // zvakiu kaina perkant nuo 1000 vnt iki 2000 vnt.
+        let d = (b * 0.96); // zvakiu kaina perkant virs 3000 vnt.
+
+        
+        console.log("Perkamų žvakių kiekis: " + a)
+
+        if( b <= 1000 ){
+            console.log("Žvakių kaina: " + b + " EUR");
+        } else if (b > 1000 && b <= 2000){
+            console.log("Žvakių kaina: " + c.toFixed(2) + " EUR");
+        } else console.log("Žvakių kaina: " + d.toFixed(2) + " EUR");
+    
+    </script>
+</body>
+</html>
+
+
+
+
+<br><br><br>
+7. uzduotis <br>
+Įmonė parduoda žvakes po 1 EUR. Perkant daugiau kaip už 1000 EUR taikoma 3 % nuolaida, daugiau kaip už 2000 EUR - 4 % nuolaida. Parašykite programą, kuri skaičiuos žvakių kainą ir atspausdintų atsakymą kiek žvakių ir kokia kaina perkama. Žvakių kiekį generuokite ​Math.random()​ funkcija nuo 5 iki 3000.  (sveiki skaičiai)
