@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- <script>
         console.log("Pirma užduotis");
         const fname = "Miroslavas";
@@ -19,15 +19,10 @@
 
     </script> -->
 
-
-
-        <!-- || - JS naudojamasa kaip arba
+    <!-- || - JS naudojamasa kaip arba
         && - JS naudojamas kaip ir  -->
-        <!-- math.rounde - apvalina i mazesne puse 
+    <!-- math.rounde - apvalina i mazesne puse 
         math.ceil - apvaline i didesne puse - pvz: 0.02 = 1  -->
-
-
-
 
     <!-- <script>
         console.log("Antra užduotis");
@@ -146,7 +141,7 @@
 
     </script> -->
 
-    <script>
+    <!-- <script>
         console.log("Septinta užduotis");
 
         let a = Math.round(Math.random() * 2995) + 5;
@@ -163,13 +158,86 @@
             console.log("Žvakių kaina: " + c.toFixed(2) + " EUR");
         } else console.log("Žvakių kaina: " + d.toFixed(2) + " EUR");
     
+    </script> -->
+    <script>
+      console.log("Aštunta užduotis");
+      let a = Math.round(Math.random() * 100);
+      let b = Math.round(Math.random() * 100);
+      let c = Math.round(Math.random() * 100);
+
+      console.log(a, b, c);
+
+      let d = (a + b + c) / 3;
+
+      console.log("Aritmetinis vidurkis: " + d.toFixed(0));
+
+      if (
+        (a <= 10 && b >= 90) ||
+        (b <= 10 && a >= 90) ||
+        (a <= 10 && b <= 10 && a <= 90 && b <= 90)
+      ) {
+        console.log("Aritmetinis vidurkis be kintamųjų a ir b " + c);
+      } else if (
+        (a <= 10 && c >= 90) ||
+        (c <= 10 && a >= 90) ||
+        (a <= 10 && c <= 10 && a <= 90 && c <= 90)
+      ) {
+        console.log("Aritmetinis vidurkis be kintamųjų a ir c " + b);
+      } else if (
+        (c <= 10 && b >= 90) ||
+        (b <= 10 && c >= 90) ||
+        (c <= 10 && b <= 10 && c <= 90 && b <= 90)
+      ) {
+        console.log("Aritmetinis vidurkis be kintamųjų b ir c " + a);
+      } else if (a <= 10 || a >= 90) {
+        console.log(
+          "Aritmetinis vidurkis be kintamojo a : " + ((b + c) / 2).toFixed(0)
+        );
+      } else if (b <= 10 || b >= 90) {
+        console.log(
+          "Aritmetinis vidurkis be kintamojo b " + ((a + c) / 2).toFixed(0)
+        );
+      } else if (c <= 10 || c >= 90) {
+        console.log(
+          "Aritmetinis vidurkis be kintamojo c " + ((a + b) / 2).toFixed(0)
+        );
+      } else if (a <= 10 && b <= 10 && d <= 10) {
+        console.log("Kintamųjų a, b ir c reikšmės yra mažiau arba lygu 10");
+      } else if (a >= 90 && b >= 90 && d >= 90) {
+        console.log("Kintamųjų a, b ir c reikšmės yra daugiau arba lygu 90");
+      } else if (a <= 10 && b >= 90 && c <= 10) {
+        console.log(
+          "Kintamųjų a ir c reikšmės yra mažesnės ar lygios už 10, o kintamojo b reikšmė yra didesnė arba lygi 90"
+        );
+      } else if (a >= 90 && b <= 10 && c <= 10) {
+        console.log(
+          "Kintamųjų b ir c reikšmės yra mažesnės ar lygios už 10, o kintamojo a reikšmė yra didesnė arba lygi 90"
+        );
+      } else if (a <= 10 && b <= 10 && c >= 90) {
+        console.log(
+          "Kintamųjų a ir b reikšmės yra mažesnės ar lygios už 10, o kintamojo c reikšmė yra didesnė arba lygi 90"
+        );
+      } else if (a <= 10 && b >= 90 && c >= 90) {
+        console.log(
+          "Kintamųjų b ir c reikšmės yra didesnės ar lygios 90, o kintamojo a reikšmė yra mažesnė arba lygi 10"
+        );
+      } else if (a >= 90 && b <= 10 && c >= 90) {
+        console.log(
+          "Kintamųjų a ir c reikšmės yra didesnės ar lygios 90, o kintamojo b reikšmė yra mažesnė arba lygi 10"
+        );
+      } else if (a >= 90 && b >= 90 && c <= 10) {
+        console.log(
+          "Kintamųjų a ir b reikšmės yra didesnės ar lygios 90, o kintamojo c reikšmė yra mažesnė arba lygi 10"
+        );
+      } else console.log("Visos reikšmės atitinka sąlygas");
     </script>
-</body>
+  </body>
 </html>
 
-
-
-
-<br><br><br>
-7. uzduotis <br>
-Įmonė parduoda žvakes po 1 EUR. Perkant daugiau kaip už 1000 EUR taikoma 3 % nuolaida, daugiau kaip už 2000 EUR - 4 % nuolaida. Parašykite programą, kuri skaičiuos žvakių kainą ir atspausdintų atsakymą kiek žvakių ir kokia kaina perkama. Žvakių kiekį generuokite ​Math.random()​ funkcija nuo 5 iki 3000.  (sveiki skaičiai)
+<br /><br /><br />
+8. užduotis <br />
+Naudokite funkcija Math.random(). Sukurkite tris kintamuosius su atsitiktinėm
+reikšmėm nuo 0 iki 100 (sveiki skaičiai). Paskaičiuokite jų aritmetinį vidurkį.
+Ir aritmetinį vidurkį atmetus tas reikšmes, kurios yra mažesnės nei 10 arba
+didesnės nei 90. Abu vidurkius atspausdinkite. Rezultatus apvalinkite iki sveiko
+skaičiaus.
